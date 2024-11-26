@@ -5,31 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        /* General Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f5f7fb, #e0e7ff); /* Soft gradient background */
-            color: #444; /* Darker text for readability */
+            background: linear-gradient(135deg, #f5f7fb, #e0e7ff);
+            color: #444;
         }
 
-        /* Container */
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        /* Header */
         header {
             text-align: center;
-            background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Soft gradient with a cool pink */
-            color: white;
+            background: linear-gradient(135deg, #ff0000);
+            color: rgb(0, 0, 0);
             padding: 2rem 1rem 3rem;
             position: relative;
         }
@@ -44,17 +31,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0.5rem 0;
-        }
-
-        header h2 {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-
-        /* Two Column Flexbox Layout */
         .content {
             display: flex;
             justify-content: space-between;
@@ -72,23 +48,18 @@
             margin-right: 4%;
         }
 
-        /* Section Styling */
         section {
             padding: 1.5rem;
-            border: 1px solid #ccc; /* Soft gray border */
+            border: 1px solid #ccc;
             border-radius: 8px;
             margin-bottom: 1.5rem;
-            background-color: #f9f9f9; /* Light gray background for sections */
+            background-color: #f9f9f9;
             transition: all 0.3s ease;
-        }
-
-        section:hover {
-            background-color: #f1f5fb; /* Slightly darker gray on hover */
         }
 
         section h3 {
             font-size: 1.8rem;
-            color: #6a82fb; /* Accent color for headings */
+            color: #6a82fb;
             margin-bottom: 1rem;
             position: relative;
         }
@@ -98,7 +69,7 @@
             display: block;
             width: 50px;
             height: 3px;
-            background: #6a82fb; /* Matching underline color */
+            background: #6a82fb;
             margin-top: 5px;
         }
 
@@ -114,7 +85,7 @@
 
         .skills li {
             display: inline-block;
-            background: #6a82fb; /* Soft blue background */
+            background: #6a82fb; 
             color: #fff;
             padding: 8px 15px;
             margin: 5px;
@@ -124,27 +95,21 @@
             transition: background 0.3s;
         }
 
-        .skills li:hover {
-            background: #fc5c7d; /* Soft pink on hover */
-        }
-
-        /* Adding color to boxes */
         .education-box {
-            background-color: #e3f2fd; /* Light Blue */
-            border-color: #81d4fa; /* Light blue border */
+            background-color: #e3f2fd; 
+            border-color: #81d4fa;
         }
 
         .skills-box {
-            background-color: #f1f8e9; /* Light Green */
-            border-color: #80e27e; /* Soft green border */
+            background-color: #f1f8e9; 
+            border-color: #80e27e; 
         }
 
         .address-box {
-            background-color: #fff3e0; /* Light Orange */
-            border-color: #ffcc80; /* Soft orange border */
+            background-color: #fff3e0;
+            border-color: #ffcc80; 
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 1rem;
@@ -157,44 +122,15 @@
             margin: 0;
         }
 
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header h2 {
-                font-size: 1.2rem;
-            }
-
-            section h3 {
-                font-size: 1.5rem;
-            }
-
-            section ul li {
-                font-size: 1rem;
-            }
-
-            .skills li {
-                font-size: 0.9rem;
-                padding: 5px 10px;
-            }
-
-            .content .left-column,
-            .content .right-column {
-                width: 100%;
-                margin-right: 0;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <!-- Add your profile photo -->
             <img src="shanto.jpg.jpg" alt="Profile Photo" class="profile-photo">
-            <h1>My Portfolio</h1>
             <h2>Soumithra Debnath Shanto</h2>
+            <p>Current student at University of Rajshahi
+            <br>Department of Computer Science and Engineering</p>
         </header>
 
         <div class="content">
