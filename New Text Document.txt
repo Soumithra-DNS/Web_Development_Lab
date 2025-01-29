@@ -1,0 +1,11 @@
+npm create vite@latest
+1.React
+2.JavaScript
+
+cd projectname
+
+npm install
+npm run dev
+npm install tailwindess/vite
+
+npm install react-router-dom
