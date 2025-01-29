@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements</title>
+    <script src="event.js" defer></script>
+</head>
+
+<body>
+    <h1>Interactive Elements</h1>
+
+    <!-- Page Load Alert -->
+    <p>The page will display a message when loaded successfully.</p>
+
+    <!-- Buttons -->
+    <button id="btnClick">Click me</button>
+    <button id="btnRightClick">Right Click on Me</button>
+    <button id="btnMouseOver">Place Mouse Over Me</button>
+    <button id="btnMouseOut">Place Mouse Inside Me and Move Out</button>
+
+    <!-- Links -->
+    <a id="linkClick" href="#">Click Me</a>
+    <a id="linkRightClick" href="#">Right Click on Me</a>
+    <a id="linkMouseOver" href="#">Place Mouse Over Me</a>
+    <a id="linkMouseOut" href="#">Place Mouse Inside Me and Move Out</a>
+
+    <!-- Text Inputs -->
+    <input id="textKeydown" type="text" placeholder="Press a key (keydown)">
+    <textarea id="textareaKeydown" placeholder="Press a key (keydown)"></textarea>
+
+    <input id="textKeyup" type="text" placeholder="Release a key (keyup)">
+    <textarea id="textareaKeyup" placeholder="Release a key (keyup)"></textarea>
+
+    <input id="textFocus" type="text" placeholder="Focus this input">
+    <input id="textBlur" type="text" placeholder="Blur this input">
+
+    <!-- Dropdown -->
+    <select id="dropdownChange">
+        <option value="" disabled selected>Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <!-- Form -->
+    <form id="formSubmit" action="action.php" method="post">
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" name="first-name" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Window Resize -->
+    <p id="windowSize">Resize the window to see the size.</p>
+</body>
+
+</html>

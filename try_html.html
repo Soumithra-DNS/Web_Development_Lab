@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Demonstration</title>
+    <script src="path/to.js"></script>
+    <noscript>This browser does not support JavaScript.</noscript>
+    <link rel="stylesheet" href="path/to.css" type="text/css">
+    <style>
+        /* Styling for the table */
+        table {
+            border: 5px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section: Text Formatting -->
+    <section>
+        <h2>Text Formatting Examples</h2>
+        <p>This is a paragraph.</p>
+        <pre>This is pre-formatted text (preserves whitespace).</pre>
+        <strong>This text is bold (semantic emphasis).</strong><br>
+        <b>This text is bold (non-semantic).</b><br>
+        <p>This text contains a <mark>highlighted phrase</mark>.</p>
+        <p>I like to write <abbr title="Hypertext Markup Language">HTML</abbr>!</p>
+        <ins>This is inserted text.</ins><br>
+        <del>This is deleted text.</del><br>
+        <s>This is struck-through text.</s><br>
+        <sup>Superscript text</sup> and <sub>subscript text</sub>.
+    </section>
+
+    <!-- Section: Links -->
+    <section>
+        <h2>Links Examples</h2>
+        <a href="http://example.com/">Visit example.com</a><br>
+        <a href="http://example.com/" rel="external">Visit example.com (external link)</a><br>
+        <h3 id="Topic1">First Topic</h3>
+        <a href="#Topic1">Click to jump to the First Topic</a>
+        <a href="https://google.com/"><img src="edit.png" alt="Edit" /></a>
+    </section>
+
+    <!-- Section: Lists -->
+    <section>
+        <h2>Lists Examples</h2>
+        <h3>Ordered List</h3>
+        <ol type="i">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <h3>Ordered List with Start and Reset</h3>
+        <ol start="5">
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li value="4">Reset to Item 4</li>
+            <li>Item 7</li>
+        </ol>
+        <h3>Reversed Ordered List</h3>
+        <ol reversed>
+            <li>Item 5</li>
+            <li>Item 4</li>
+            <li>Item 3</li>
+        </ol>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Sub-item 2.1</li>
+                    <li>Sub-item 2.2</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>Name 1</dt>
+            <dt>Name 2</dt>
+            <dd>Value for Name 1 and Name 2</dd>
+            <dt>Name 3</dt>
+            <dd>Value for Name 3</dd>
+        </dl>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+        <h2>Table Example</h2>
+        <table>
+            <caption>Table Title</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Person 1</th>
+                    <th scope="col">Person 2</th>
+                    <th scope="col">Person 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Col 1</td>
+                    <td>Row 1, Col 2</td>
+                    <td>Row 1, Col 3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">This row spans all three columns.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" scope="row">This cell spans two rows.</td>
+                    <td>Row 3, Col 2</td>
+                    <td>Row 3, Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 4, Col 2</td>
+                    <td>Row 4, Col 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Table Footer: Example Table</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Section: Images -->
+    <section>
+        <h2>Image Example</h2>
+        <img src="sample.jpg" alt="Sample image description" />
+        <img src="http://jaced.com/blogpix/2007/trisquarecircle/002.gif" usemap="#shapes" alt="Shapes">
+        <map name="shapes">
+            <area shape="polygon" coords="79,6,5,134,153,134" href="triangle.html" alt="Triangle" title="Triangle">
+            <area shape="rectangle" coords="177,6,306,134" href="rectangle.html" alt="Rectangle" title="Rectangle">
+            <area shape="circle" coords="397,71,65" href="circle.html" alt="Circle" title="Circle">
+        </map>
+    </section>
+
+    <!-- Section: Form Elements -->
+    <section>
+        <h2>Form Inputs Example</h2>
+
+        <!-- Text Input -->
+        <label for="textInput">Text Input:</label>
+        <input type="text" id="textInput" size="50" placeholder="Enter text here">
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Choose a Color:</legend>
+            <input type="radio" name="color" id="red" value="#F00">
+            <label for="red">Red</label>
+            <input type="radio" name="color" id="blue" value="#00F">
+            <label for="blue">Blue</label>
+        </fieldset>
+        <br>
+
+        <!-- Checkbox -->
+        <fieldset>
+            <legend>Select Options:</legend>
+            <input type="checkbox" name="option1" id="option1" value="Option 1">
+            <label for="option1">Option 1</label>
+            <input type="checkbox" name="option2" id="option2" value="Option 2">
+            <label for="option2">Option 2</label>
+        </fieldset>
+        <br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <br><br>
+
+        <!-- Button Inputs -->
+        <input type="button" onclick="alert('Hello World!')" value="Click Me">
+        <button type="button" onclick="alert('Hello World!')">Click Me</button>
+        <br><br>
+
+        <!-- Submit and Reset -->
+        <input type="submit" value="Submit">
+        <button type="submit">
+            <img src="submit-icon.jpg" alt="Submit Icon" /> Submit
+        </button>
+        <input type="reset" value="Reset">
+        <br><br>
+
+        <!-- Hidden Input -->
+        <input type="hidden" name="hiddenInput" value="hiddenValue">
+
+        <!-- Email Input -->
+        <form>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </form>
+        <br>
+
+        <!-- Telephone Input -->
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="telephone" value="+8400000000">
+        <br><br>
+
+        <!-- Number Input -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+        <br><br>
+
+        <!-- Range Input -->
+        <label for="rangeInput">Range:</label>
+        <input type="range" id="rangeInput" min="1" max="100" step="1">
+        <br><br>
+
+        <!-- Search Input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="searchQuery" placeholder="Search here">
+        <br><br>
+
+        <!-- Image Input -->
+        <label for="imageInput">Image as Button:</label>
+        <input type="image" id="imageInput" src="img.png" alt="Image Button" height="50px" width="50px">
+        <br><br>
+
+        <!-- Date and Time Inputs -->
+        <label for="week">Week:</label>
+        <input type="week" id="week">
+        <br><br>
+
+        <label for="url">Homepage (URL):</label>
+        <input type="url" id="url" name="Homepage" placeholder="https://example.com">
+        <br><br>
+
+        <label for="datetime">Date and Time:</label>
+        <input type="datetime-local" id="datetime">
+        <br><br>
+
+        <label for="month">Month:</label>
+        <input type="month" id="month">
+        <br><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time">
+        <br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+    </section>
+
+    <section>
+        <select>
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </section>
+
+</body>
+
+</html>
